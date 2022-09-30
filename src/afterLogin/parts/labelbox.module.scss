@@ -1,0 +1,72 @@
+$background-color: #f8fafc;
+$white: #fff;
+$color: #334155;
+$small: #999999;
+$border: #c0c0c0;
+$focus: #4f46e5;
+$lowfocus: #c5c2ff;
+$warning: #fffeeb;
+$danger: #f8fcc0;
+$hover: #eae9ff;
+$success: #e7ffe1;
+.labelBox {
+  width: 320px;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  margin: 10px;
+  h1 {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 600;
+    color: $color;
+  }
+  h2 {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: $small;
+  }
+}
+.bottomBox {
+  box-sizing: border-box;
+  margin: 16px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a {
+    text-decoration: none;
+    color: $focus;
+  }
+  span {
+    color: $color;
+    width: 48px;
+    height: 48px;
+    border-radius: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      background-color: $hover;
+      color: $focus;
+    }
+  }
+}
+.editBtn {
+  float: right;
+  color: $color;
+  width: 48px;
+  height: 48px;
+  border-radius: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+    background-color: $hover;
+    color: $focus;
+  }
+}

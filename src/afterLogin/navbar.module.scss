@@ -1,0 +1,60 @@
+$background-color: #f8fafc;
+$white: #fff;
+$color: #334155;
+$small: #999999;
+$border: #c0c0c0;
+$focus: #4f46e5;
+$lowfocus: #c5c2ff;
+$hover: #eae9ff;
+$warning: #fffeeb;
+$danger: #f8fcc0;
+$success: #e7ffe1;
+.navBox {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100vh;
+  padding: 16px 0px 16px 16px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 848px) {
+  .navbar {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .navBox {
+    flex-direction: column;
+    position: relative;
+  }
+  .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 72px);
+    padding: 0 8px 8px 8px;
+  }
+}

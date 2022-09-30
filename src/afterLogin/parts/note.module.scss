@@ -1,0 +1,88 @@
+$background-color: #f8fafc;
+$white: #fff;
+$color: #334155;
+$small: #858585;
+$border: #c0c0c0;
+$focus: #4f46e5;
+$lowfocus: #c5c2ff;
+$warning: #fffeeb;
+$danger: #f8fcc0;
+$hover: #eae9ff;
+$success: #e7ffe1;
+.noteBox {
+  width: 320px;
+  min-height: 280px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding: 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  margin: 10px;
+  position: relative;
+
+  h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 16px 0;
+    color: $small;
+  }
+  a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: $focus;
+    width: 100%;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 0 0 8px 8px;
+  }
+}
+.topBox {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  h1 {
+    width: 240px;
+    line-height: 48px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    color: $color;
+  }
+  span {
+    color: $color;
+    width: 48px;
+    height: 48px;
+    border-radius: 64px;
+    color: $focus;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      cursor: pointer;
+      background-color: $hover;
+      color: $focus;
+    }
+  }
+}
+.tags {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  span {
+    color: $color;
+    font-weight: 700;
+    margin: 8px;
+  }
+}
